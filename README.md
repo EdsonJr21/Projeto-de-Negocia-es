@@ -1,6 +1,10 @@
+## Status do Projeto
+
+🚧 Projeto em desenvolvimento. Novas funcionalidades e melhorias estão sendo implementadas.
+
 # Projeto de Negociações
 
-Este projeto é uma aplicação desenvolvida em TypeScript para gerenciar negociações financeiras, com arquitetura baseada em modelos, controladores e visualizações. Inclui também uma API Node.js para fornecer dados à aplicação.
+Este projeto é uma aplicação web desenvolvida em TypeScript para gerenciar negociações financeiras, utilizando arquitetura baseada em modelos, controladores e visualizações (MVC). Inclui também uma API Node.js/Express para fornecer dados à aplicação.
 
 ## Estrutura do Projeto
 
@@ -8,6 +12,8 @@ Este projeto é uma aplicação desenvolvida em TypeScript para gerenciar negoci
 - **app/controllers**: Controladores da lógica de negócio (`NegociacaoController`).
 - **app/views**: Renderização da interface do usuário (`NegociacoesView`, `MensagemView`, `Views`).
 - **app/enums**: Enumerações auxiliares (`DiasDaSemana`).
+- **app/decorators**: Decorators para otimização e logging.
+- **app/service**: Serviços para integração com APIs.
 - **servidor-api**: Servidor Node.js/Express para fornecer dados via API REST.
 
 ## Tecnologias Utilizadas
@@ -36,7 +42,8 @@ npm run start
 ```
 
 Isso irá:
-- Compilar o código TypeScript em `dist/js` (modo watch)
+
+- Compilar o código TypeScript (modo watch)
 - Iniciar o servidor de API em `servidor-api` na porta 8080
 - Servir a aplicação front-end com o Live Server
 
@@ -46,10 +53,6 @@ Isso irá:
 - Visualização de lista de negociações
 - Validação para permitir negociações apenas em dias úteis
 - API REST para fornecimento de dados de negociações
-
-## Status do Projeto
-
-🚧 Projeto em desenvolvimento. Novas funcionalidades e melhorias estão sendo implementadas.
 
 ## Contribuição
 
